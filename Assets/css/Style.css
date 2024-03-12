@@ -5,6 +5,8 @@
 
 body {
     font-family: vazir;
+
+    background-image: url("../img/Back2.jpg");
 }
 
 * {
@@ -13,46 +15,42 @@ body {
     margin: 0;
 }
 
-
-
-.header {
-    background-color: #042b2ef8;
-    height: 50px;
-    width: 100%;
-    color: aliceblue;
-
+.container {
+    justify-content: center;
 }
+
+
+
 
 .bascketicon {
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     color: rgb(255, 255, 255);
-    margin-right: 20px;
-    margin-top: 5px;
+    margin-top: 8px;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
 }
 
-.menuicon {
-    height: 30px;
-    width: 30px;
-    color: rgb(255, 255, 255);
-    margin-left: 20px;
-    margin-top: 5px;
-    cursor: pointer;
-}
-
-.title {
-    height: 200px;
+.bascketiconbadge {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(5, 92, 5);
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
+    margin-top: -35px;
+    margin-right: 10px;
 }
 
+
 .btnaddproduct {
-    background-color: #042b2ef8;
+    background-color: #055328f8;
     height: 30px;
     width: 100%;
     font-size: 12px;
     color: aliceblue;
+
 }
 
 .bascketicon2 {
@@ -60,4 +58,180 @@ body {
     width: 20px;
     color: rgb(255, 255, 255);
     margin-right: 5px;
+}
+
+.card {
+    margin-top: 20px;
+    width: 400px !important;
+}
+
+.card-body {
+    color: aliceblue;
+    background-color: #042b2ef8;
+}
+
+
+
+
+
+
+
+
+
+
+
+.header {
+    background-color: #021101d5;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    background-color: #021101d5;
+    height: auto;
+
+
+
+}
+
+.header li a {
+    display: block;
+    padding-top: 20px;
+    text-decoration: none;
+    color: #f4f4f4;
+
+
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+    background-color: #065c3b;
+
+}
+
+.header .logo {
+    width: 250px;
+    display: block;
+    font-size: 1.5em;
+    padding: 13px 20px;
+    text-decoration: none;
+    color: #f4f4f4;
+    font-weight: bolder;
+
+}
+
+/* menu */
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+
+}
+
+/* menu icon */
+
+.header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    padding-top: 28px;
+    position: absolute;
+    user-select: none;
+
+
+}
+
+.header .menu-icon .navicon {
+    background: #ffffff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+    background: #ffffff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+    top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+    top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked~.menu {
+    max-height: 240px;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon {
+    background: transparent;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked~.menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 49em) {
+    .header li {
+        float: right;
+        background: transparent !important;
+
+    }
+
+    .header li a {
+        padding: 20px 30px;
+    }
+
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+
+    }
+
+    .header .menu-icon {
+        display: none;
+    }
+
+
+
+
+
 }
