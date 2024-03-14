@@ -5,48 +5,264 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Assets/Bootstrap/bootstrap.rtl.css">
     <link rel="stylesheet" href="Assets/css/Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
 
     <title>فروشگاه پاترمور</title>
 </head>
 
-<body dir="rtl">
-    <header class="header">
-        <div class="container d-flex justify-content-start ">
-            <a href="" class="logo d-lg-block d-none">فروشگاه پاترمور</a>
-            <input class="menu-btn" type="checkbox" id="menu-btn" />
-            <ul class="menu">
+<div dir="rtl" class="shade">
+    <div class="shade">
+        <header class="header">
+            <div class="container d-flex justify-content-start ">
+                <a href="" class="logo d-lg-block d-none">فروشگاه پاترمور</a>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <ul class="menu">
 
-                <li><a href="#work">خانه</a></li>
-                <li><a href="#about">محصولات</a></li>
-                <li><a href="#careers">نوع محصول</a></li>
-                <li><a href="#contact">فانتزیارت</a></li>
-                <li><a href="#contact">درباره ما</a></li>
-                <li><a href="#contact">ارتباط ما</a></li>
+                    <li><a href="#work">خانه</a></li>
+                    <li><a href="#product.html">محصولات</a></li>
+                    <li><a href="#careers">نوع محصول</a></li>
+                    <li><a href="#contact">فانتزیارت</a></li>
+                    <li><a href="#contact">درباره ما</a></li>
+                    <li><a href="#contact">ارتباط ما</a></li>
 
-            </ul>
+                </ul>
 
-            <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="menuicon">
-                    <path fill-rule="evenodd" d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 
+                <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="menuicon">
+                        <path fill-rule="evenodd" d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 
             .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 
             .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
-                </svg>
+                    </svg>
+                </div>
+
+                <div class="bascketicon ">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="bascketicon">
+
+                        <path
+                            d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
+                    </svg>
+                    <span class="badge badge-secondary bascketiconbadge">0</span>
+                </div>
+
+
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
+            </div>
+        </header>
+
+        <div class="container d-flex justify-content-start ">
+            <div class="c">
+
+                <input type="radio" name="a" id="cr-1" checked>
+                <label class="label1" for="cr-1" style="--hue: 32"></label>
+                <div class="ci">
+                    <img src="Assets/img/5.jpg" alt="Snow on leafs">
+                </div>
+
+                <input type="radio" name="a" id="cr-2">
+                <label class="label1" for="cr-2" style="--hue: 82"></label>
+                <div class="ci" style="--z: 3">
+                    <h2 class="ch">Look from inside?</h2>
+                    <img src="Assets/img/slider2.jpg" alt="Trees">
+                </div>
+
+                <input type="radio" name="a" id="cr-3">
+                <label class="label1" for="cr-3" style="--hue: 40"></label>
+                <div class="ci" style="--z: 2">
+                    <h2 class="ch" style="--h: 40; --s: 100%; --l: 89%">In the mountains?</h2>
+                    <img src="Assets/img/slider4.jpg" alt="Mountains and houses">
+                </div>
+
+                <input type="radio" name="a" id="cr-4">
+                <label class="label1" for="cr-4" style="--hue: 210"></label>
+                <div class="ci" style="--z: 1">
+                    <h2 class="ch" style="--h: 210; --s: 70%; --l: 90%">Above looks beautiful?</h2>
+                    <img src="Assets/img/slider5.jpg" alt="Sky and mountains">
+                </div>
+
             </div>
 
-            <div class="bascketicon ">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="bascketicon">
-
-                    <path
-                        d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
-                </svg>
-                <span class="badge badge-secondary bascketiconbadge">0</span>
+            <div class="d-flex row justify-content-center align-items-center col-4 py-2">
+                <img src="Assets/img/1.png" class="banner">
+                <img src="Assets/img/2.png" class="banner">
             </div>
 
 
-            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
 
         </div>
-    </header>
+        <div class="container d-flex d-none d-lg-block">
+            <div class="container1">
+                <div class="carousel1">
+                    <div class="carousel__face"><span>This is something</span></div>
+                    <div class="carousel__face"><span>Very special</span></div>
+                    <div class="carousel__face"><span>Special is the key</span></div>
+                    <div class="carousel__face"><span>For you</span></div>
+                    <div class="carousel__face"><span>Just give it</span></div>
+                    <div class="carousel__face"><span>A try</span></div>
+                    <div class="carousel__face"><span>And see</span></div>
+                    <div class="carousel__face"><span>How IT Works</span></div>
+                    <div class="carousel__face"><span>Woow</span></div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="sending d-flex align-items-center justify-content-start ">
+                <div class="d-flex mt-3 px-5 ">
+                    <div>
+                        <img src="https://neelas.ir/wp-content/uploads/2022/01/1-min.png">
+                    </div>
+                    <div class="row  d-flex align-items-center justify-content-center">
+                        <p class="h5">ارسال سریع سفارشات</p>
+                        <p class="h6"> سه بار ارسال در هفته</p>
+
+                    </div>
+                </div>
+
+                <div class="d-flex mt-3 px-5 ">
+                    <div>
+                        <img src="https://neelas.ir/wp-content/uploads/2022/01/icon2-min.png">
+                    </div>
+                    <div class="row  d-flex align-items-center justify-content-center">
+                        <p class="h5"> پرداخت آنلاین </p>
+                        <p class="h6">با استفاده از کارت بانکی</p>
+
+                    </div>
+                </div>
+
+                <div class="d-flex mt-3 px-5 ">
+                    <div>
+                        <img src="https://neelas.ir/wp-content/uploads/2022/01/icon1-min.png">
+                    </div>
+                    <div class="row  d-flex align-items-center justify-content-center">
+                        <p class="h5"> ضمانت اصالت کالا</p>
+                        <p class="h6">تضمین کیفیت محصول</p>
+
+                    </div>
+                </div>
+
+                <div class="wrapper-content-banner wd-fill wd-items-top wd-justify-left">
+                    <div class="content-banner  text-left">
 
 
 
-</body>
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="footer mt-5">
+            <div class="inner-footer">
+
+                <!--  for company name and description -->
+                <div class="footer-items">
+                    <h1>پاترمور</h1>
+                    <p>فروشگاه نیلاس با هدف ارائه محصولات خاص و منحصر به فرد برای شما عزیزان با صفحه ویزارد ویزز در
+                        مرداد ماه ۱۳۹۹ شروع به کار کرد. اولین فروشگاه محصولات هری پاتر و فیلم سریال های فانتزی در شیراز.
+                        نیلاس عشق بی پایان.</p>
+                </div>
+
+                <!--  for quick links  -->
+                <div class="footer-items">
+                    <h3>لینک سریع</h3>
+                    <div class="border1"></div> <!--for the underline -->
+                    <ul>
+                        <a href="#">
+                            <li>خانه</li>
+                        </a>
+                        <a href="#">
+                            <li>جستجو</li>
+                        </a>
+                        <a href="#">
+                            <li>ارتباط با ما</li>
+                        </a>
+
+                    </ul>
+                </div>
+
+                <!--  for some other links -->
+                <div class="footer-items">
+                    <h3>سوالات متداول</h3>
+                    <div class="border1"></div> <!--for the underline -->
+                    <ul>
+                        <a href="#">
+                            <li>امکان ارسال به تمام شهرها وجود دارد؟</li>
+                        </a>
+                        <a href="#">
+                            <li>چه مدت زمان طول میکشد سفارش به مقصد برسد؟</li>
+                        </a>
+                        <a href="#">
+                            <li>امکان خرید حضوری وجود دارد؟</li>
+                        </a>
+
+                    </ul>
+                </div>
+
+                <!--  for contact us info -->
+                <div class="footer-items">
+                    <h3> ارتباط با ما</h3>
+                    <div class="border1"></div>
+                    <ul>
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i>XYZ, abc</li>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i>123456789</li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i>xyz@gmail.com</li>
+                    </ul>
+
+                    <!--   for social links -->
+                    <div class="social-media">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-google-plus-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!--   Footer Bottom start  -->
+            <div class="footer-bottom">
+                Copyright &copy; Food and Burps 2020.
+            </div>
+        </div>
+
+        <!--   Footer Bottom end -->
+
+        <!--   FOOTER END -->
+
+        </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    </body>
