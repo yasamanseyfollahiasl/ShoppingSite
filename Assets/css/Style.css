@@ -12,7 +12,7 @@ body {
 .shade {
     height: auto;
     width: 100% !important;
-    background-color: #00050393;
+    background-color: #000503b9;
     z-index: 20;
 }
 
@@ -37,6 +37,7 @@ body {
     cursor: pointer;
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
 }
 
 .bascketiconbadge {
@@ -92,7 +93,7 @@ body {
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
     width: 100%;
     z-index: 3;
-    height: 70px;
+    height: 100px;
     align-items: center;
     justify-content: center;
 
@@ -100,13 +101,14 @@ body {
 
 .header ul {
     margin: 0;
-    padding: 0;
+    padding: 15;
     list-style: none;
     overflow: hidden;
     width: 100%;
     background-color: #021101d5;
     height: auto;
     z-index: 20;
+
 
 
 
@@ -131,10 +133,11 @@ body {
     width: 250px;
     display: block;
     font-size: 1.5em;
-    padding: 13px 20px;
+    padding: 15px 20px;
     text-decoration: none;
     color: #f4f4f4;
     font-weight: bolder;
+    margin-top: 15px;
 
 }
 
@@ -155,6 +158,8 @@ body {
     padding-top: 28px;
     position: absolute;
     user-select: none;
+    z-index: 50;
+
 
 
 }
@@ -191,6 +196,7 @@ body {
 
 .header .menu-btn {
     display: none;
+
 }
 
 .header .menu-btn:checked~.menu {
@@ -203,10 +209,13 @@ body {
 
 .header .menu-btn:checked~.menu-icon .navicon:before {
     transform: rotate(-45deg);
+    z-index: 50;
 }
 
 .header .menu-btn:checked~.menu-icon .navicon:after {
     transform: rotate(45deg);
+    z-index: 50;
+
 }
 
 .header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
